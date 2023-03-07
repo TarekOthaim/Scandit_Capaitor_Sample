@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>barcode selection simple sample</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="divFull" #captureView ></div>
+
+  <!-- <div id="buttons" #ButtonsView>
+    <button id="tapToSelect" (click)="toggleBarcodeSelectionType()">Tap to Select</button>
+    <button id="aimToSelect" (click)="toggleBarcodeSelectionType()">Aim to Select</button>
+  </div> -->
+</ion-content>
+
+
+<ion-footer>
+  <div id="buttons" #ButtonsView>
+    <button id="tapToSelect" (click)="toggleBarcodeSelectionType()">Tap to Select</button>
+    <button id="aimToSelect" (click)="toggleBarcodeSelectionType()">Aim to Select</button>
+  </div>
+</ion-footer>

@@ -1,0 +1,112 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+body {
+  --ion-background-color: transparent;
+}
+
+
+
+#buttons {
+  width: 100vw;
+  height: calc(env(safe-area-inset-bottom, 0px) + 0.8em);
+  padding: 1em 0;
+  background-color: black;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#buttons button {
+  border: none;
+  color: white;
+  font-size: 0.8em;
+  background: transparent;
+}
+
+#buttons button.selected {
+  font-weight: bold;
+}
+
+div.result {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  background: #FFFE;
+  border-radius: 8px;
+}
+
+.result p {
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.result button {
+  color: #2EC1CE;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+}
+
+
+
+#buttons {
+  width: 100vw;
+  height: calc(env(safe-area-inset-bottom, 0px) + 0.8em);
+  padding: 1em 0;
+  background-color: black;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#buttons button {
+  border: none;
+  color: white;
+  font-size: 0.8em;
+  background: transparent;
+}
+
+#buttons button.selected {
+  font-weight: bold;
+}
